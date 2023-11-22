@@ -1,0 +1,305 @@
+:root
+{
+    --border-color : #AB752E;
+    --bacground-color : #F7ECC8;
+    --oddColumn-color : #6B4A35;
+    --evenColumn-color : #854E23;
+    --white-nut-color : #FFFFFF;
+    --black-nut-color : #030000;
+}
+
+*,
+*::after,
+*::before
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#mainContainer
+{
+    position: absolute;
+    width: 85%;
+    height: 80%;
+    top: 30px;
+    outline: 20px solid var(--border-color);
+}
+
+/* up */
+#upContainer
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+/* up-left */
+#upLeftContainer
+{
+    width: 48%;
+    height: 100%;
+    background-image: url(index_557x257.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#upLeftContainer div
+{
+    width: 8%;
+    height: 90%;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#upLeftContainer div:nth-child(odd)
+{
+    background-image: url(Screenshot\ \(1\).png);
+    background-repeat: no-repeat;
+}
+#upLeftContainer div:nth-child(even)
+{
+    background-image: url(Screenshot\ \(2\).png);
+    background-repeat: no-repeat;
+}
+
+/* up-center */
+#upCenterContainer
+{
+    width: 4%;
+    height: 100%;
+    background-color: var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* up-right */
+#upRightContainer
+{
+    width: 48%;
+    height: 100%;
+    background-image: url(index_557x257.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#upRightContainer div
+{
+    width: 8%;
+    height: 90%;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#upRightContainer div:nth-child(odd)
+{
+    background-image: url(Screenshot\ \(1\).png);
+    background-repeat: no-repeat;
+}
+#upRightContainer div:nth-child(even)
+{
+    background-image: url(Screenshot\ \(2\).png);
+    background-repeat: no-repeat;
+}
+
+
+/* down */
+#downContainer
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+/* down-left */
+#downLeftContainer
+{
+    width: 48%;
+    height: 100%;
+    background-image: url(index_557x257.jpg);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+#downLeftContainer div
+{
+    width: 8%;
+    height: 90%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+#downLeftContainer div:nth-child(odd)
+{
+    background-image: url(Screenshot\ \(4\).png);
+    background-repeat: no-repeat;
+}
+#downLeftContainer div:nth-child(even)
+{
+    background-image: url(Screenshot\ \(3\).png);
+    background-repeat: no-repeat;
+}
+
+/* down-center */
+#downCenterContainer
+{
+    width: 4%;
+    height: 100%;
+    background-color: var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* down-right */
+#downRightContainer
+{
+    width: 48%;
+    height: 100%;
+    background-image: url(index_557x257.jpg);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+#downRightContainer div
+{
+    width: 8%;
+    height: 90%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+#downRightContainer div:nth-child(odd)
+{
+    background-image: url(Screenshot\ \(4\).png);
+    background-repeat: no-repeat;
+}
+#downRightContainer div:nth-child(even)
+{
+    background-image: url(Screenshot\ \(3\).png);
+    background-repeat: no-repeat;
+}
+
+
+
+.white{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--white-nut-color);
+    cursor: pointer;
+}
+.black{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--black-nut-color);
+    cursor: pointer;
+    color: white;
+}
+
+
+.dice
+{
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--evenColumn-color);
+}
+
+#leftDice,
+#rightDice
+{
+    font-size: 36px;
+    color: wheat;
+}
+
+#diceBtn
+{
+    padding: 8px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: var(--bacground-color);
+    border-radius: 8px;
+}
+#diceBtn:hover
+{
+    color: var(--oddColumn-color);
+}
+
+#blackTurn
+{
+    width: 50px;
+    height: 50px;
+    background-color: var(--evenColumn-color);
+    border-radius: 50%;
+}
+
+#whiteTurn
+{
+    width: 50px;
+    height: 50px;
+    background-color: var(--evenColumn-color);
+    border-radius: 50%;
+}
+
+.LLL
+{
+    width: 100px;
+    height: 50px;
+    background-image: url(images.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.RRR
+{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    background-image: url(images.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#RRR1,#RRR2
+{
+    color: white;
+}
